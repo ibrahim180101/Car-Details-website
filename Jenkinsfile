@@ -5,7 +5,8 @@ pipeline {
 
         stage('Clone Code') {
             steps {
-                git 'https://github.com/ibrahim180101/Car-Details-website.git'
+                git branch: 'main',
+                url: 'https://github.com/ibrahim180101/Car-Details-website.git'
             }
         }
 
